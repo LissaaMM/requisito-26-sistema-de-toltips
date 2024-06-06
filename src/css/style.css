@@ -16,12 +16,14 @@
     align-items: center;
 }
 header{
-    font-size: 30px;
+    font-size: 100%;
     align-items: center;
     display: flex;
     padding: 25px;
     background:var(--color-green) ;
-    color:#D9D4CC;
+    color:var(--color-branco);
+    
+
 }
 img{
     width: 100px;
@@ -61,3 +63,119 @@ img{
     padding: 10px;
     border-radius: 5px;
   }
+  body {  
+    background:url(http://img.tapatalk.com/d/12/10/31/6yby7usy.jpg) center center;
+  }
+
+#container{
+background:url(../img/cogueloo.jpg) no-repeat;
+background-size:500px 293px;
+width:500px;
+height:293px;
+margin:25px auto;
+}
+
+.textoo {  width:16px;
+    height:16px;
+    border-radius:10px;
+    border:2px solid #fff;
+    position:absolute;
+    background:var(--color-branco);
+  }
+
+
+.textoo:hover
+ {  
+  -webkit-animation-play-state: paused;
+}
+
+.textoo:hover .info{
+  visibility:visible;
+}
+
+#first{ 
+    margin: 200px 0 0 200px !important;
+  }
+
+#second{ 
+    margin:75px 0 0 52px !important;
+  }
+
+#third{ 
+    margin:158px 0 0 425px !important;
+  }
+    
+.info {
+     width:200px;
+    padding:10px;
+    background:var(--color-red);
+    border-radius:3px;
+    position:absolute;
+    visibility:hidden;
+    margin:-105px 0 0 -100px;
+    box-shadow:0 0 50px 0 var();
+  }
+
+h3 {  
+    font-weight:100;
+    font-size:20px;
+    margin:0 0 5px 0;
+  }
+
+p {  
+font-weight:400;
+font-size:12px;
+}
+
+.arrow {
+position:absolute;
+margin:10px 0 0 88px;
+width: 0; 
+height: 0; 
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-top: 10px solid var(--color-rede);
+}
+@media only screen and (max-width: 959px) {
+  p{
+      font-size: 10px;
+  }
+  
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  p{
+      font-size: 12px;
+  }
+}
+
+
+@media only screen and (
+  max-width: 767px
+  ) {
+  p{
+      font-size: 14px;
+  }
+}
+
+
+@media only screen and (
+  min-width: 480px
+  ) and (
+    max-width: 767px
+    ) {
+  p{
+      font-size: 9px;
+  }
+}
+
+
+@media only screen and (
+  max-width: 479px
+  ) {
+  p{
+      font-size: 7px;
+  }
+}
+
